@@ -1,0 +1,50 @@
+{
+  "name": "wallet-core-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs": "npm:empty-npm-package@1.0.0",
+    "fs-extra": "^10.1.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "react": "^18.1.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@trustwallet/wallet-core": "^2.9.5",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^16.11.34",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "postinstall": "mkdir -pv public/static/js && cp node_modules/@trustwallet/wallet-core/dist/lib/wallet-core.* public/static/js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

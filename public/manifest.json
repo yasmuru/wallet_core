@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Frontier",
+  "version": "1.0.0",
+  "description": "Frontier Wallet for DeFi & Crypto",
+  "permissions": [
+      "storage",
+      "unlimitedStorage",
+      "clipboardWrite",
+      "activeTab",
+      "webRequest",
+      "notifications",
+      "tabs"
+  ],
+  "host_permissions": ["*://*.eth/"],
+  "author": "Frontier Wallet",
+  "homepage_url": "https://frontier.xyz/",
+  "short_name": "Frontier",
+  "action": {
+      "default_popup": "/index.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
