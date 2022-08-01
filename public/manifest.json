@@ -1,23 +1,14 @@
 {
-  "manifest_version": 3,
-  "name": "Frontier",
-  "version": "1.0.0",
-  "description": "Frontier Wallet for DeFi & Crypto",
-  "permissions": [
-      "storage",
-      "unlimitedStorage",
-      "clipboardWrite",
-      "activeTab",
-      "webRequest",
-      "notifications",
-      "tabs"
-  ],
-  "host_permissions": ["*://*.eth/"],
-  "author": "Frontier Wallet",
-  "homepage_url": "https://frontier.xyz/",
-  "short_name": "Frontier",
-  "action": {
-      "default_popup": "/index.html"
+  "author": "https://metamask.io",
+  "browser_action": {
+     "default_popup": "./index.html",
+     "default_title": "FMetaMask"
   },
+  "description": "__MSG_appDescription__",
+  "manifest_version": 2,
+  "minimum_chrome_version": "66",
+  "name": "__MSG_appName__",
+  "permissions": [ "storage", "unlimitedStorage", "clipboardWrite", "http://localhost:8545/", "https://*.infura.io/", "https://chainid.network/chains.json", "https://lattice.gridplus.io/*", "activeTab", "webRequest", "*://*.eth/", "notifications" ],
+  "version": "10.17.0",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
